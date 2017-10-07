@@ -1,0 +1,23 @@
+<template name="HomeLayout">
+   {{> Header}}
+    {{> SideNav}}
+    <body>
+    <main>
+        <div>
+            {{> Template.dynamic template=main}}
+        </div>
+    </main>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+    </body>
+</template>
+
+<!--<template name="HomeLayout">-->
+    <!--{{> Header}}-->
+    <!--<main>-->
+        <!--<div class="billboard">-->
+            <!--<h2>Organize your Meals</h2>-->
+        <!--</div>-->
+    <!--</main>-->
+<!--</template>-->

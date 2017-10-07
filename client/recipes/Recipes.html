@@ -1,0 +1,20 @@
+<template name="Recipes">
+    <!--<p>TEST2</p>Test 2-->
+    <!--{{> NewRecipe}}-->
+    <section>
+        {{#if Template.subscriptionsReady}}
+         <ul>
+        {{#each recipes}}
+<table>
+          <tr>
+              <th>{{> Recipe}} </th>
+                <th>{{_id}}</th>
+          </tr>
+</table>
+        {{/each}}
+         </ul>
+        {{else}}
+        <p>Loadind ..</p>
+        {{/if}}
+    </section>
+</template>

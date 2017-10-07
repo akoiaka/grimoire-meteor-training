@@ -1,0 +1,24 @@
+<template name="MainLayout">
+<header>
+    <h2>Le Grand Grimoire</h2>
+    <h4>Mon petit livret de secrets</h4>
+    {{ loginButtons}}
+</header>
+    {{> SideNav}}
+    <body>
+    <main class="main-layout">
+        {{> Template.dynamic template=main}}
+    </main>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+    </body>
+</template>
+
+<!--<template name="MainLayout">-->
+    <!--{{> Header}}-->
+    <!--{{> SideNav}}-->
+    <!--<main class="main-layout">-->
+        <!--{{> Template.dynamic template=main}}-->
+    <!--</main>-->
+<!--</template>-->
